@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="544.0" style="-fx-border-width: 5px; -fx-border-color: yellow;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.ChatController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="120.0" layoutX="7.0" layoutY="424.0" stroke="YELLOW" strokeType="OUTSIDE" strokeWidth="2.0" width="532.0" />
+      <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="354.0" layoutY="11.0" prefHeight="30.0" prefWidth="138.0" text="Financial chatbot" textAlignment="RIGHT" underline="true">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="responseArea" editable="false" layoutX="45.0" layoutY="180.0" prefColumnCount="40" prefHeight="237.0" prefRowCount="10" prefWidth="448.0" wrapText="true" />
+      <TextField fx:id="userInput" layoutX="45.0" layoutY="95.0" prefHeight="56.0" prefWidth="448.0" />
+      <Button fx:id="send" layoutX="107.0" layoutY="475.0" mnemonicParsing="false" onAction="#handleSend" prefHeight="24.0" prefWidth="91.0" text="Send" />
+      <Line endX="64.0" endY="-101.121337890625" layoutX="477.0" layoutY="542.0" startX="-52.0" startY="4.0" stroke="YELLOW" strokeWidth="3.0" />
+      <Button fx:id="back" layoutX="349.0" layoutY="475.0" mnemonicParsing="false" onAction="#buttonBack" prefHeight="24.0" prefWidth="91.0" text="Back" />
+      <Line endX="54.0" endY="-75.121337890625" layoutX="488.0" layoutY="548.0" startX="-25.121337890625" startY="-2.0" stroke="YELLOW" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="3.0" />
+      <Label fx:id="weatherLabel" layoutX="45.0" layoutY="41.0" prefHeight="24.0" prefWidth="345.0" text="Loading weather..." />
+      <Label layoutX="45.0" layoutY="78.0" prefHeight="17.0" prefWidth="111.0" text="Your question:" />
+      <Label layoutX="45.0" layoutY="162.0" prefHeight="17.0" prefWidth="120.0" text="Chatbot answer:" />
+   </children>
+</AnchorPane>

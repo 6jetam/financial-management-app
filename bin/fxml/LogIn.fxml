@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="384.0" prefWidth="605.0" style="-fx-border-color: edfa05; -fx-border-width: 5px;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.LoginController">
+   <children>
+      <AnchorPane prefHeight="384.0" prefWidth="274.0" style="-fx-background-color: black; -fx-border-width: 5px; -fx-border-color: edfa05;">
+         <children>
+            <ImageView fitHeight="185.0" fitWidth="198.0" layoutX="39.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imgs/ManagementF.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="45.0" layoutY="279.0" text="Phone: +421 987 654 321" textFill="#edfa05" />
+            <Label layoutX="45.0" layoutY="304.0" text="Email: finance@management.sk" textFill="#edfa05" />
+            <Label layoutX="45.0" layoutY="333.0" text="Web: financemanagement.sk" textFill="#edfa05" />
+            <Label layoutX="35.0" layoutY="14.0" text="Finance Management" textFill="#edfa05">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="113.0" layoutY="41.0" text="s.r.o." textFill="#edfa05">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="295.0" layoutY="152.0" prefHeight="19.0" prefWidth="82.0" text="Nickname:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="295.0" layoutY="206.0" prefHeight="19.0" prefWidth="82.0" text="Password:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nicknameField" layoutX="377.0" layoutY="150.0" prefHeight="24.0" prefWidth="198.0" promptText="Nickname" style="-fx-background-color: none; -fx-border-color: black; -fx-border-width: 0px 0px 2px 0px;">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextField>
+      <PasswordField fx:id="passwordField" layoutX="377.0" layoutY="202.0" prefHeight="24.0" prefWidth="198.0" promptText="Password" style="-fx-background-color: none; -fx-border-color: black; -fx-border-width: 0px 0px 2px 0px;" />
+      <Button fx:id="loginBtn" layoutX="397.0" layoutY="277.0" mnemonicParsing="false" onAction="#handleLoginClick" prefHeight="28.0" prefWidth="159.0" style="-fx-background-color: black;" text="Login" textFill="#edfa05">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="cancelBtn" layoutX="397.0" layoutY="326.0" mnemonicParsing="false" onAction="#handleCancelClick" prefHeight="28.0" prefWidth="159.0" style="-fx-background-color: black;" text="Cancel" textFill="#edfa05">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Line endX="92.0" endY="-1.0" layoutX="483.0" layoutY="177.0" startX="-106.0" startY="-1.0" stroke="#edfa05" strokeWidth="2.0" />
+      <Line endX="92.0" endY="-1.0" layoutX="482.0" layoutY="229.0" startX="-106.0" startY="-1.0" stroke="#edfa05" strokeWidth="2.0" />
+      <Label fx:id="failLogIn" layoutX="334.0" layoutY="241.0" prefHeight="16.0" prefWidth="228.0" text="Invalid Login. Please try it again." />
+      <Button fx:id="registrationBtn" layoutX="360.0" layoutY="14.0" mnemonicParsing="false" onAction="#registrationClick" prefHeight="28.0" prefWidth="159.0" style="-fx-background-color: black;" text="Registration" textFill="#edfa05">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Line endX="18.0" endY="60.0" layoutX="341.0" layoutY="317.0" startX="-68.0" startY="-6.0" stroke="#edfa05" strokeWidth="2.0" />
+      <Line endX="7.0" endY="50.999969482421875" layoutX="340.0" layoutY="333.0" startX="-68.0" startY="-6.0" stroke="#edfa05" strokeWidth="2.0" />
+   </children>
+</AnchorPane>

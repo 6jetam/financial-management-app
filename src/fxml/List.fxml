@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="529.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.TableController">
+   <center>
+      <TableView fx:id="tableData" prefHeight="465.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="idColumn" prefWidth="45.0" text="Id" />
+          <TableColumn fx:id="kindColumn" prefWidth="79.0" text="Kind" />
+          <TableColumn fx:id="categoryColumn" prefWidth="162.0" text="Category" />
+          <TableColumn fx:id="descriptionColumn" prefWidth="161.0" text="Description" />
+          <TableColumn fx:id="amountColumn" minWidth="0.0" prefWidth="125.0" text="Amount" />
+          <TableColumn fx:id="dateColumn" maxWidth="142.0" prefWidth="127.0" text="Date" />
+           
+        </columns>
+      </TableView>
+   </center>
+   <bottom>
+      <AnchorPane prefHeight="80.0" prefWidth="600.0" style="-fx-background-color: black;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="addButton" layoutX="25.0" layoutY="28.0" mnemonicParsing="false" onAction="#openFormDialog" prefHeight="25.0" prefWidth="72.0" text="Add" />
+            <Button fx:id="editRecord" layoutX="115.0" layoutY="28.0" mnemonicParsing="false" onAction="#openEditForm" prefHeight="25.0" prefWidth="68.0" text="Edit" />
+            <Button fx:id="deleteBtnRecord" layoutX="205.0" layoutY="28.0" mnemonicParsing="false" onAction="#deleteRecord" prefHeight="25.0" prefWidth="87.0" text="Delete" />
+            <Button fx:id="back" layoutX="606.0" layoutY="28.0" mnemonicParsing="false" onAction="#buttonBack" prefHeight="25.0" prefWidth="72.0" text="Back" />
+            <ComboBox fx:id="sortOptions" layoutX="434.0" layoutY="28.0" onAction="#sortBy" prefWidth="150.0" promptText="Sort by" />
+            <Button fx:id="sumarryBtn" layoutX="324.0" layoutY="28.0" mnemonicParsing="false" onAction="#Summary" text="Summary" />
+            <Label layoutX="434.0" layoutY="6.0" prefHeight="17.0" prefWidth="80.0" text="Sort by:" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </bottom>
+   <top>
+      <Label fx:id="weatherLabel" prefHeight="38.0" prefWidth="447.0" text="Loading weather..." BorderPane.alignment="TOP_LEFT">
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+         <BorderPane.margin>
+            <Insets left="50.0" />
+         </BorderPane.margin>
+         <graphic>
+            <Label fx:id="login" prefHeight="17.0" prefWidth="135.0" text="Login" />
+         </graphic>
+      </Label>
+   </top>
+</BorderPane>
