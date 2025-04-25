@@ -22,7 +22,7 @@ Technologies Used
 
 - Java 17+
 - JavaFX
-- MySQL (on port `3307`)
+- MySQL 
 - JDBC
 - OpenWeatherMap API
 - Gemini AI (Google)
